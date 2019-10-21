@@ -1,10 +1,9 @@
 body {
-    font-family: "Lato", 'sans-serif';
+	font-family: "Lato", "sans-serif";
 	font-weight: 400;
-	line-height: 1.7;
+	line-height: 1.6;
 	color: $color-grey-dark;
 }
-
 
 .heading-primary {
 	color: $color-white;
@@ -16,7 +15,7 @@ body {
 		display: block;
 		font-size: 6rem;
 		letter-spacing: 3.5rem;
-
+		font-weight: 400;
 		animation-name: moveInLeft;
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
@@ -34,4 +33,30 @@ body {
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
 	}
+}
+
+.heading-secondary {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	word-spacing: 0.5rem;
+	display: inline-block;
+	background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+	-webkit-background-clip: text;
+	color: transparent;
+
+	&:hover {
+		transform: skew(5deg, 2deg) scale(1.05);
+		text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+	}
+}
+
+.heading-tertiary {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: $default-font-size;
 }
