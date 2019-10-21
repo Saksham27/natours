@@ -15,10 +15,12 @@
     - `rem` - root is the reference
     - `percentages` - reference is parent for both length and font-size
     - global font-size to percentage
-    - BEM
+    - BEM (.block__element--modifier)
+    - the 7-1 Architecture (*abstract/, base/ components/, layout/, pages/, themes/, vendors/*)
     - Sass 
         - two writing formats **SASS** and **SCSS**
         - `variables`
         - `@mixin`
         - `functions`
-        - `extends` 
+        - `extends`
+        - 
