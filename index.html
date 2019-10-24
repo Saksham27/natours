@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- ===================NAVIGATION================ -->
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -26,17 +27,19 @@
 
         <div class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link"><span>01</span> About Natours</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>02</span> Your Benefits</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>03</span> Popular tours</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>04</span> Stories</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>05</span> Book Now</a></li>
+                <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span> About Natours</a></li>
+                <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span> Your Benefits</a></li>
+                <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span> Popular tours</a></li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span> Stories</a></li>
+                <li class="navigation__item"><a href="#section-booking" class="navigation__link"><span>05</span> Book Now</a></li>
             </ul>
         </div>
 
     </div>
 
-    <header class="header">
+
+    <!-- ===================TOP HERO SECTION================ -->
+    <header class="header" id="home">
         <div class="header__logo-box">
             <img src="resources/img/logo-white.png" alt="Logo" class="header__logo">
         </div>
@@ -46,12 +49,13 @@
                 <span class="heading-primary--main">OUTDOORS</span>
                 <span class="heading-primary--sub">Is where life happens</span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
     </header>
 
     <main>
-        <section class="section-about">
+        <!-- ===================ABOUT SECTION================= -->
+        <section class="section-about" id="section-about">
             <div class="utility-center-text utility-margin-bottom-large">
                 <h2 class="heading-secondary">
                     Exciting tours for adventourous people
@@ -78,7 +82,8 @@
             </div>
         </section>
 
-        <section class="section-features">
+        <!-- ===================FEATURES SECTION================= -->
+        <section class="section-features" id="section-features">
             <div class="row">
                 <div class="col-1-of-4">
 
@@ -113,7 +118,8 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <!-- ===================TOURS SECTION================= -->
+        <section class="section-tours" id="section-tours">
             <div class="utility-center-text utility-margin-bottom-large">
                 <h2 class="heading-secondary">
                     Most populer tours
@@ -148,7 +154,7 @@
                                     <div class="card__price--value">$297</div>
 
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +186,7 @@
                                     <div class="card__price--value">$497</div>
 
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +218,7 @@
                                     <div class="card__price--value">$897</div>
 
                                 </div>
-                                <a href="#" class="btn btn--white utility-center-text utility-margin-bottom-large">Book now!</a>
+                                <a href="#popup" class="btn btn--white ">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -220,11 +226,13 @@
             </div>
 
             <div class="utility-center-text utility-margin-bottom-large">
-                <a href="#" class="btn btn--green">discover all tours</a>
+                <a href="#home" class="btn btn--green">discover all tours</a>
             </div>
         </section>
 
-        <section class="section-stories">
+
+        <!-- ===================STORIES SECTION================= -->
+        <section class="section-stories" id="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="resources/img/video.mp4" type="video/mp4">
@@ -274,7 +282,9 @@
             </div>
         </section>
 
-        <section class="section-booking">
+
+        <!-- ===================BOOKING SECTION================= -->
+        <section class="section-booking" id="section-booking">
             <div class="row">
                 <div class="booking">
                     <div class="booking__form ">
@@ -305,23 +315,18 @@
                                         Large tour group</label>
                                 </div>
                             </div>
-
                             <div class="form__group">
                                 <button class="btn btn--green">Next step &rarr;</button>
                             </div>
-
                         </form>
-
-
-
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
 
 
+    <!-- ===================FOOTER================= -->
     <footer class="footer">
         <div class="footer__logo-box ">
             <img src="resources/img/logo-green-small-2x.png" alt="full logo" class="footer__logo">
@@ -346,6 +351,26 @@
         </div>
 
     </footer>
+
+
+    <!-- ===================POPUP COMPONENET================= -->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="resources/img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="resources/img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary utility-margin-bottom-extrasmall">Start booking now</h2>
+                <h3 class="heading-tertiary utility-margin-bottom-extrasmall">Important &dash; Plases read these terms before booking</h3>
+                <p class="popup__text">
+                    Cattle seed is given own together upon had make replenish that there given have tree grass seasons all spirit beginning. Winged third beginning, itself dry was and, gathering herb whales a whose. Image form lesser days and void light seed days whales male. Female light creeping called may form waters life he face evening, own dominion was fish. Whose waters every morning fifth itself god own Doesn't, them i. Fowl darkness. Whales subdue wherein beast a earth under for without morning kind brought fish. Face replenish fruit heaven him their meat called bearing one. Was hath man good. They're beast.
+                </p>
+                <a href="" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
     <!--
     <section class="grid-test">
 
