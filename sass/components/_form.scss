@@ -16,6 +16,10 @@
 		display: block;
 		transition: all 0.3s;
 
+		@include respond(tab-port) {
+			width: 100%;
+		}
+
 		&:focus {
 			outline: none;
 			box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
@@ -49,6 +53,11 @@
 	&__radio-group {
 		width: 49%;
 		display: inline-block;
+
+		@include respond(tab-port) {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
 	}
 
 	&__radio-label {
@@ -66,9 +75,8 @@
 		border-radius: 50%;
 		position: absolute;
 		left: 0;
-        top: -0.6rem;
-        
-       
+		top: -0.6rem;
+
 		&::after {
 			content: '';
 			display: block;
@@ -79,16 +87,16 @@
 			border-radius: 50%;
 			top: 50%;
 			left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
+			transform: translate(-50%, -50%);
+			opacity: 0;
 		}
-    }
+	}
 
-    &__radio-input {
-        display: none;
-    }
-    
-    &__radio-input:checked + &__radio-label > &__radio-button::after {
-        opacity: 1;
-    }
+	&__radio-input {
+		display: none;
+	}
+
+	&__radio-input:checked + &__radio-label > &__radio-button::after {
+		opacity: 1;
+	}
 }
